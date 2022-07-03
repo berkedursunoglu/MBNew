@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <item
+        android:id="@+id/journal_action"
+        android:title="@string/g_ndem" />
+
+    <item android:title="Ulusal"
+        android:id="@+id/public_action" />
+
+    <item android:title="@string/spor"
+        android:id="@+id/sport_action"/>
+
+    <item android:title="Siyaset"
+        android:id="@+id/politics_action"/>
+
+
+    <item android:title="Ekonomi"
+        android:id="@+id/economi_action"/>
+
+    <item android:title="Hakkımızda" >
+
+        <menu>
+            <item android:title="Adres" />
+
+            <item android:title="Telefon No." />
+        </menu>
+    </item>
+
+    <item android:title="MBNews Copryright">
+        <menu>
+            <item android:title=""/>
+        </menu>
+    </item>
+
+</menu>

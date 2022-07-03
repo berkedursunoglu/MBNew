@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        android:background="@color/primaryTextColor">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Yorum Yap"
+            android:textColor="@color/secondaryTextColor"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/comment_username"
+            android:layout_width="268dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="Kullanıcı Adı..."
+            android:inputType="textPersonName"
+            android:textColorHint="#60000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4"
+            android:backgroundTint="@color/secondaryTextColor"/>
+
+        <EditText
+            android:id="@+id/comment_content"
+            android:layout_width="268dp"
+            android:layout_height="180dp"
+            android:layout_marginTop="32dp"
+            android:ems="10"
+            android:gravity="start"
+            android:hint="Yorum..."
+            android:inputType="textPersonName"
+            android:textColorHint="#60000000"
+            android:backgroundTint="@color/secondaryTextColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/comment_username" />
+
+        <Button
+            android:id="@+id/comment_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="13dp"
+            android:backgroundTint="#00000000"
+            android:outlineAmbientShadowColor="#00000000"
+            android:outlineSpotShadowColor="#00000000"
+            android:shadowColor="#00000000"
+            android:text="Tamam"
+            android:textColor="@color/secondaryTextColor"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/comment_content"
+            app:layout_constraintTop_toBottomOf="@+id/comment_content" />
+
+        <Button
+            android:id="@+id/comment_decline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00000000"
+            android:outlineAmbientShadowColor="#00000000"
+            android:outlineSpotShadowColor="#00000000"
+            android:shadowColor="#00000000"
+            android:text="İptal"
+            android:textColor="@color/secondaryTextColor"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/comment_ok"
+            app:layout_constraintEnd_toStartOf="@+id/comment_ok"
+            app:layout_constraintTop_toTopOf="@+id/comment_ok"
+            app:layout_constraintVertical_bias="0.0"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

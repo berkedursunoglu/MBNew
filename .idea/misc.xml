@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/berke/AndroidStudioProjects/MBNews/app/src/main/res/drawable/progressbar_custom_theme.xml" value="0.3495" />
+        <entry key="..\:/Users/berke/AndroidStudioProjects/MBNews/app/src/main/res/layout/activity_main.xml" value="0.3489583333333333" />
+        <entry key="..\:/Users/berke/AndroidStudioProjects/MBNews/app/src/main/res/layout/category_news_cardview.xml" value="0.33" />
+        <entry key="..\:/Users/berke/AndroidStudioProjects/MBNews/app/src/main/res/layout/custom_progress_theme.xml" value="0.34791666666666665" />
+        <entry key="..\:/Users/berke/AndroidStudioProjects/MBNews/app/src/main/res/layout/drawer_header.xml" value="0.3489583333333333" />
+        <entry key="..\:/Users/berke/AndroidStudioProjects/MBNews/app/src/main/res/layout/fragment_category_news.xml" value="0.3489583333333333" />
+        <entry key="..\:/Users/berke/AndroidStudioProjects/MBNews/app/src/main/res/layout/fragment_news_page.xml" value="0.33" />
+        <entry key="..\:/Users/berke/AndroidStudioProjects/MBNews/app/src/main/res/layout/fragment_news_page_detail.xml" value="0.3489583333333333" />
+        <entry key="..\:/Users/berke/AndroidStudioProjects/MBNews/app/src/main/res/layout/mainpage_news_horizontal_cardview.xml" value="0.34791666666666665" />
+        <entry key="..\:/Users/berke/AndroidStudioProjects/MBNews/app/src/main/res/layout/news_comment_alertdialog.xml" value="0.3489583333333333" />
+        <entry key="..\:/Users/berke/AndroidStudioProjects/MBNews/app/src/main/res/layout/newsdetail_comment_cardview.xml" value="0.25" />
+        <entry key="..\:/Users/berke/AndroidStudioProjects/MBNews/app/src/main/res/layout/newsdetailcomment.xml" value="0.34791666666666665" />
+        <entry key="..\:/Users/berke/AndroidStudioProjects/MBNews/app/src/main/res/menu/drawer_menu.xml" value="0.5" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
