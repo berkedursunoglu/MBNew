@@ -4,18 +4,27 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/berke/AndroidStudioProjects/MBNews/app/src/main/res/drawable/progressbar_custom_theme.xml" value="0.3495" />
+        <entry key="..\:/Users/berke/AndroidStudioProjects/MBNews/app/src/main/res/layout/activity_login.xml" value="0.3489583333333333" />
         <entry key="..\:/Users/berke/AndroidStudioProjects/MBNews/app/src/main/res/layout/activity_main.xml" value="0.3489583333333333" />
+        <entry key="..\:/Users/berke/AndroidStudioProjects/MBNews/app/src/main/res/layout/activity_profile.xml" value="0.3489583333333333" />
         <entry key="..\:/Users/berke/AndroidStudioProjects/MBNews/app/src/main/res/layout/category_news_cardview.xml" value="0.33" />
         <entry key="..\:/Users/berke/AndroidStudioProjects/MBNews/app/src/main/res/layout/custom_progress_theme.xml" value="0.34791666666666665" />
         <entry key="..\:/Users/berke/AndroidStudioProjects/MBNews/app/src/main/res/layout/drawer_header.xml" value="0.3489583333333333" />
         <entry key="..\:/Users/berke/AndroidStudioProjects/MBNews/app/src/main/res/layout/fragment_category_news.xml" value="0.3489583333333333" />
+        <entry key="..\:/Users/berke/AndroidStudioProjects/MBNews/app/src/main/res/layout/fragment_news_add_page.xml" value="0.3489583333333333" />
         <entry key="..\:/Users/berke/AndroidStudioProjects/MBNews/app/src/main/res/layout/fragment_news_page.xml" value="0.33" />
         <entry key="..\:/Users/berke/AndroidStudioProjects/MBNews/app/src/main/res/layout/fragment_news_page_detail.xml" value="0.3489583333333333" />
+        <entry key="..\:/Users/berke/AndroidStudioProjects/MBNews/app/src/main/res/layout/fragment_profile_details_page.xml" value="0.3489583333333333" />
+        <entry key="..\:/Users/berke/AndroidStudioProjects/MBNews/app/src/main/res/layout/fragment_profile_edit_page.xml" value="0.33489583333333334" />
+        <entry key="..\:/Users/berke/AndroidStudioProjects/MBNews/app/src/main/res/layout/fragment_sign_in_page.xml" value="0.3489583333333333" />
+        <entry key="..\:/Users/berke/AndroidStudioProjects/MBNews/app/src/main/res/layout/fragment_sign_up_page.xml" value="0.25" />
         <entry key="..\:/Users/berke/AndroidStudioProjects/MBNews/app/src/main/res/layout/mainpage_news_horizontal_cardview.xml" value="0.34791666666666665" />
         <entry key="..\:/Users/berke/AndroidStudioProjects/MBNews/app/src/main/res/layout/news_comment_alertdialog.xml" value="0.3489583333333333" />
         <entry key="..\:/Users/berke/AndroidStudioProjects/MBNews/app/src/main/res/layout/newsdetail_comment_cardview.xml" value="0.25" />
         <entry key="..\:/Users/berke/AndroidStudioProjects/MBNews/app/src/main/res/layout/newsdetailcomment.xml" value="0.34791666666666665" />
         <entry key="..\:/Users/berke/AndroidStudioProjects/MBNews/app/src/main/res/menu/drawer_menu.xml" value="0.5" />
+        <entry key="..\:/Users/berke/AndroidStudioProjects/MBNews/app/src/main/res/menu/nav_bottom_menu.xml" value="0.34791666666666665" />
+        <entry key="..\:/Users/berke/AndroidStudioProjects/MBNews/app/src/main/res/menu/profile_menu.xml" value="0.3489583333333333" />
       </map>
     </option>
   </component>

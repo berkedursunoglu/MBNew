@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="editPage"
+            type="com.berkedursunoglu.mbnews.profile.ProfileEditPage" />
+    </data>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profile.ProfileEditPage">
+
+
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/change_username_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="150dp"
+            android:text="Kullanıcı Adı Değiştir"
+            android:textColor="@color/secondaryTextColor"
+            android:textSize="20sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/profileedit_current_password_inusernamelayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Mevcut Şifre"
+            android:textSize="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="50dp">
+        </EditText>
+
+        <EditText
+            android:id="@+id/profileedit_update_username"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Yeni Kullanıcı Adı"
+            android:textSize="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp">
+        </EditText>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/change_password_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="150dp"
+            android:text="Şifre Değiştir"
+            android:textColor="@color/secondaryTextColor"
+            android:textSize="20sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/profileedit_current_password_inpasswordlayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Mevcut Şifre"
+            android:textSize="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="50dp">
+        </EditText>
+
+        <EditText
+            android:id="@+id/profileedit_update_password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Yeni Şifre"
+            android:textSize="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp">
+        </EditText>
+
+        <EditText
+            android:id="@+id/proifleedit_update_password2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Yeni Şifre Tekrar"
+            android:textSize="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp">
+        </EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/change_email_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="150dp"
+            android:text="Email Değiştir"
+            android:textColor="@color/secondaryTextColor"
+            android:textSize="20sp"
+            android:textStyle="bold">
+        </TextView>
+
+        <EditText
+            android:id="@+id/profileedit_current_password_inemaillayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Mevcut Şifre"
+            android:textSize="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="50dp">
+        </EditText>
+
+        <EditText
+            android:id="@+id/profileedit_update_email"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Yeni Email"
+            android:textSize="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp">
+        </EditText>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/primaryTextColor"
+        android:onClick="@{()-> editPage.actionPage()}"
+        android:text="Kaydet"
+        android:textColor="@color/secondaryTextColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

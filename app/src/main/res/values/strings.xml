@@ -8,4 +8,17 @@
     <string name="g_ndem">Genel</string>
     <string name="spor">Spor</string>
     <string name="yorumlar">Yorumlar</string>
+    <string name="haber_ekle">Haber Ekle</string>
+    <string name="mail_de_i_tir">Mail Değiştir</string>
+    <string name="ifre_de_i_tir">Şifre Değiştir</string>
+    <string name="kullan_c_ad_de_i_tir">Kullanıcı Adı Değiştir</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
 </resources>

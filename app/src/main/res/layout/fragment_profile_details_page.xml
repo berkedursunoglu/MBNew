@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="detailsPage"
+            type="com.berkedursunoglu.mbnews.profile.ProfileDetailsPage" />
+    </data>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profile.ProfileDetailsPage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/user"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/profile_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kullanıcı Adı"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textSize="19sp"
+            android:textColor="@color/secondaryTextColor">
+        </TextView>
+
+        <Button
+            android:onClick="@{()-> detailsPage.gotoUsernameEdit()}"
+            android:id="@+id/profile_username_change"
+            android:layout_marginTop="80dp"
+            android:layout_marginStart="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/kullan_c_ad_de_i_tir"
+            android:textColor="@color/secondaryTextColor"
+            android:backgroundTint="#00000000"
+            android:outlineAmbientShadowColor="@color/secondaryTextColor"
+            android:outlineSpotShadowColor="#00000000">
+        </Button>
+
+        <Button
+            android:onClick="@{()-> detailsPage.gotoPasswordEdit()}"
+            android:id="@+id/profile_password_change"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ifre_de_i_tir"
+            android:textColor="@color/secondaryTextColor"
+            android:backgroundTint="#00000000"
+            android:outlineAmbientShadowColor="@color/secondaryTextColor"
+            android:outlineSpotShadowColor="#00000000">
+        </Button>
+
+        <Button
+            android:onClick="@{()-> detailsPage.gotoEmailEdit()}"
+            android:id="@+id/profile_email_change"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mail_de_i_tir"
+            android:textColor="@color/secondaryTextColor"
+            android:backgroundTint="#00000000"
+            android:outlineAmbientShadowColor="@color/secondaryTextColor"
+            android:outlineSpotShadowColor="#00000000">
+        </Button>
+
+        <Button
+            android:onClick="@{()-> detailsPage.gotoNewsAddPage()}"
+            android:id="@+id/profile_add_news"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/haber_ekle"
+            android:textColor="@color/secondaryTextColor"
+            android:backgroundTint="#00000000"
+            android:outlineAmbientShadowColor="@color/secondaryTextColor"
+            android:outlineSpotShadowColor="#00000000">
+        </Button>
+    </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

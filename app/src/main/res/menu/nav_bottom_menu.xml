@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/signInPage"
+        android:icon="@drawable/signin"
+        android:title="Giriş Yap" />
+    <item
+        android:id="@+id/signUpPage"
+        android:icon="@drawable/adduser"
+        android:title="Kayıt Ol" />
+</menu>

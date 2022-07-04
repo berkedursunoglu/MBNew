@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".login.SignUpPage">
+
+
+        <EditText
+            android:id="@+id/signup_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="400dp"
+            android:ems="10"
+            android:hint="Kullanıcı Adı"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/signup_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Şifre"
+            app:layout_constraintEnd_toEndOf="@+id/signup_username"
+            app:layout_constraintStart_toStartOf="@+id/signup_username"
+            app:layout_constraintTop_toBottomOf="@+id/signup_username" />
+
+        <EditText
+            android:id="@+id/signup_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="E-mail"
+            app:layout_constraintEnd_toEndOf="@+id/signup_password"
+            app:layout_constraintStart_toStartOf="@+id/signup_password"
+            app:layout_constraintTop_toBottomOf="@+id/signup_password" />
+
+        <Button
+            android:id="@+id/sign_up_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="80dp"
+            android:backgroundTint="@color/primaryTextColor"
+            android:text="Kayıt Ol"
+            android:textColor="@color/secondaryTextColor"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/signup_email"
+            app:layout_constraintStart_toStartOf="@+id/signup_email" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

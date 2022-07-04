@@ -1,5 +1,6 @@
 package com.berkedursunoglu.mbnews.news
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.*
 import android.widget.LinearLayout
@@ -15,14 +16,13 @@ import com.berkedursunoglu.mbnews.Constants
 import com.berkedursunoglu.mbnews.R
 import com.berkedursunoglu.mbnews.databinding.FragmentNewsPageBinding
 import com.berkedursunoglu.mbnews.news.viewmodels.NewsPageViewModel
-import com.berkedursunoglu.mbnews.recyclerviews.PublicNewsRecyclerView
+import com.berkedursunoglu.mbnews.profile.ProfileActivity
 import com.berkedursunoglu.mbnews.recyclerviews.EconomyRecyclerView
+import com.berkedursunoglu.mbnews.recyclerviews.PublicNewsRecyclerView
 import com.berkedursunoglu.mbnews.recyclerviews.SportNewsRecyclerView
 import com.denzcoskun.imageslider.constants.ScaleTypes
 import com.denzcoskun.imageslider.interfaces.ItemClickListener
 import com.denzcoskun.imageslider.models.SlideModel
-import kotlinx.coroutines.GlobalScope
-import kotlinx.coroutines.launch
 
 
 class NewsPage : Fragment() {
@@ -35,11 +35,13 @@ class NewsPage : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+
     }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
+        savedInstanceState: Bundle?,
     ): View {
         dataBinding = DataBindingUtil.inflate(
             layoutInflater,
@@ -58,6 +60,8 @@ class NewsPage : Fragment() {
         dataBinding.drawerLayout.addDrawerListener(toogle)
         toogle.syncState()
         val actionBar = (activity as AppCompatActivity?)!!.supportActionBar
+        val actionToolbar = (activity as AppCompatActivity?)?.setSupportActionBar(dataBinding.toolbar)
+        setHasOptionsMenu(true)
         actionBar?.setDisplayHomeAsUpEnabled(true)
         return dataBinding.root
     }
@@ -164,8 +168,17 @@ class NewsPage : Fragment() {
     }
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
-        super.onCreateOptionsMenu(menu, inflater)
-        inflater.inflate(R.menu.drawer_menu,menu)
+        return inflater.inflate(R.menu.profile_menu,menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when(item.itemId){
+            R.id.profile_action -> {
+                startActivity(Intent(requireContext(), ProfileActivity::class.java))
+                requireActivity().finish()
+            }
+        }
+       return super.onOptionsItemSelected(item)
     }
 
 
