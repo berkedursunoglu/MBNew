@@ -59,10 +59,10 @@ class NewsPage : Fragment() {
         )
         dataBinding.drawerLayout.addDrawerListener(toogle)
         toogle.syncState()
-        val actionBar = (activity as AppCompatActivity?)!!.supportActionBar
-        val actionToolbar = (activity as AppCompatActivity?)?.setSupportActionBar(dataBinding.toolbar)
+        val actionBar = (activity as AppCompatActivity?)
+        //actionBar?.setSupportActionBar(dataBinding.toolbar)
+        //val actionToolbar = (activity as AppCompatActivity?)?.setSupportActionBar(dataBinding.toolbar)
         setHasOptionsMenu(true)
-        actionBar?.setDisplayHomeAsUpEnabled(true)
         return dataBinding.root
     }
 
@@ -87,10 +87,6 @@ class NewsPage : Fragment() {
 
 
         })
-
-
-
-
 
         viewModel.lastTenNewsPublic.observe(viewLifecycleOwner, Observer {
             if (it.size == 0) {
@@ -161,15 +157,23 @@ class NewsPage : Fragment() {
 
                 R.id.politics_action -> navigate(Constants.POLITICS)
 
+                R.id.profile_edit -> {startActivity(Intent(requireContext(),ProfileActivity::class.java))
+                requireActivity().finish()}
+
             }
                 true
         }
 
     }
 
+
+    /*
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
-        return inflater.inflate(R.menu.profile_menu,menu)
+        inflater.inflate(R.menu.profile_menu,menu)
     }
+
+     */
+
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when(item.itemId){
@@ -181,11 +185,10 @@ class NewsPage : Fragment() {
        return super.onOptionsItemSelected(item)
     }
 
-
-
     fun navigate(id:Int){
         val action = NewsPageDirections.actionNewsPageToCategoryNews(id,1)
         view?.findNavController()?.navigate(action)
     }
+
 
 }

@@ -5,6 +5,20 @@
     tools:showIn="navigation_view">
 
 
+    <item android:title="Üye İşlemi" >
+
+        <menu>
+
+            <item android:title="Profili Düzenle"
+                android:id="@+id/profile_edit"/>
+            <item
+                android:title="Çıkış Yap"
+                android:id="@+id/log_out">
+            </item>
+        </menu>
+
+    </item>
+
     <item
         android:id="@+id/journal_action"
         android:title="@string/g_ndem" />
@@ -30,6 +44,7 @@
             <item android:title="Telefon No." />
         </menu>
     </item>
+
 
     <item android:title="MBNews Copryright">
         <menu>

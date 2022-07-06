@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.activity.OnBackPressedCallback
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
 import com.berkedursunoglu.mbnews.R
@@ -18,7 +19,7 @@ class NewsAddPage : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
+        handleBack()
     }
 
     override fun onCreateView(
@@ -33,6 +34,16 @@ class NewsAddPage : Fragment() {
     fun gotoProfileDetailsPage(){
         val action = NewsAddPageDirections.actionNewsAddPageToProfileDetailsPage()
         view?.findNavController()?.navigate(action)
+    }
+
+    fun handleBack() {
+        val backPressedCallback = object : OnBackPressedCallback(true){
+            override fun handleOnBackPressed() {
+                val action = NewsAddPageDirections.actionNewsAddPageToProfileDetailsPage()
+                view?.findNavController()?.navigate(action)
+            }
+        }
+        requireActivity().onBackPressedDispatcher.addCallback(this,backPressedCallback)
     }
 
 
